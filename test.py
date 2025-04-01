@@ -29,6 +29,34 @@ class ItineraryBuilderTest(unittest.TestCase):
     # ----- AI-Assisted Test Cases -----
     # Participants will implement their AI-assisted test cases here.
     # Please name your test in a way which indicates that these are AI-assisted test cases.
+    
+    def test_ai_chronological_order(self):
+        """
+        AI-assisted test case that verifies concerts are returned in chronological order.
+        Tests constraint #2: The itinerary should return a list of concerts sorted in 
+        chronological order (by date from earliest to latest).
+        """
+        # Arrange
+        later_concert = Concert(
+            artist="Artist A",
+            date="2025-04-15",
+            location="Venue A"
+        )
+        earlier_concert = Concert(
+            artist="Artist B",
+            date="2025-04-01",
+            location="Venue B"
+        )
+        
+        # Act
+        self.builder.add_concert(later_concert)
+        self.builder.add_concert(earlier_concert)
+        itinerary = self.builder.get_itinerary()
+        
+        # Assert
+        self.assertEqual(len(itinerary), 2, "Itinerary should contain both concerts")
+        self.assertEqual(itinerary[0].date, "2025-04-01", "First concert should be the earlier date")
+        self.assertEqual(itinerary[1].date, "2025-04-15", "Second concert should be the later date")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,154 @@
+{
+  "experiment_start": "2025-03-28T22:52:41",
+  "test_runs": [
+    {
+      "timestamp": "2025-03-28T22:53:00.494690",
+      "results": {
+        "total": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "success": true,
+        "details": "test_manual_1 (test.ItineraryBuilderTest)\nFirst manually written test case. ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n"
+      }
+    },
+    {
+      "timestamp": "2025-04-01T00:40:38.841678",
+      "results": {
+        "total": 2,
+        "failures": 0,
+        "errors": 1,
+        "skipped": 0,
+        "success": false,
+        "details": "test_ai_chronological_order (test.ItineraryBuilderTest)\nAI-assisted test case that verifies concerts are returned in chronological order. ... ERROR\ntest_manual_1 (test.ItineraryBuilderTest)\nFirst manually written test case. ... ok\n\n======================================================================\nERROR: test_ai_chronological_order (test.ItineraryBuilderTest)\nAI-assisted test case that verifies concerts are returned in chronological order.\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/Users/moaprim/dundiii/TDD-Prompt-Engineering/test.py\", line 40, in test_ai_chronological_order\n    later_concert = Concert(\nTypeError: __init__() missing 2 required positional arguments: 'latitude' and 'longitude'\n\n----------------------------------------------------------------------\nRan 2 tests in 0.001s\n\nFAILED (errors=1)\n"
+      }
+    },
+    {
+      "timestamp": "2025-04-01T00:45:00.536040",
+      "results": {
+        "total": 2,
+        "failures": 0,
+        "errors": 1,
+        "skipped": 0,
+        "success": false,
+        "details": "test_ai_chronological_order (test.ItineraryBuilderTest)\nAI-assisted test case that verifies concerts are returned in chronological order. ... ERROR\ntest_manual_1 (test.ItineraryBuilderTest)\nFirst manually written test case. ... ok\n\n======================================================================\nERROR: test_ai_chronological_order (test.ItineraryBuilderTest)\nAI-assisted test case that verifies concerts are returned in chronological order.\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/Users/moaprim/dundiii/TDD-Prompt-Engineering/test.py\", line 40, in test_ai_chronological_order\n    later_concert = Concert(\nTypeError: __init__() missing 2 required positional arguments: 'latitude' and 'longitude'\n\n----------------------------------------------------------------------\nRan 2 tests in 0.001s\n\nFAILED (errors=1)\n"
+      }
+    },
+    {
+      "timestamp": "2025-04-01T00:46:10.738359",
+      "results": {
+        "total": 2,
+        "failures": 0,
+        "errors": 1,
+        "skipped": 0,
+        "success": false,
+        "details": "test_ai_chronological_order (test.ItineraryBuilderTest)\nAI-assisted test case that verifies concerts are returned in chronological order. ... ERROR\ntest_manual_1 (test.ItineraryBuilderTest)\nFirst manually written test case. ... ok\n\n======================================================================\nERROR: test_ai_chronological_order (test.ItineraryBuilderTest)\nAI-assisted test case that verifies concerts are returned in chronological order.\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/Users/moaprim/dundiii/TDD-Prompt-Engineering/test.py\", line 40, in test_ai_chronological_order\n    later_concert = Concert(\nTypeError: __init__() missing 2 required positional arguments: 'latitude' and 'longitude'\n\n----------------------------------------------------------------------\nRan 2 tests in 0.000s\n\nFAILED (errors=1)\n"
+      }
+    },
+    {
+      "timestamp": "2025-04-01T00:46:52.897563",
+      "results": {
+        "total": 2,
+        "failures": 0,
+        "errors": 1,
+        "skipped": 0,
+        "success": false,
+        "details": "test_ai_chronological_order (test.ItineraryBuilderTest)\nAI-assisted test case that verifies concerts are returned in chronological order. ... ERROR\ntest_manual_1 (test.ItineraryBuilderTest)\nFirst manually written test case. ... ok\n\n======================================================================\nERROR: test_ai_chronological_order (test.ItineraryBuilderTest)\nAI-assisted test case that verifies concerts are returned in chronological order.\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/Users/moaprim/dundiii/TDD-Prompt-Engineering/test.py\", line 56, in test_ai_chronological_order\n    self.builder.add_concert(later_concert)\nAttributeError: 'ItineraryBuilder' object has no attribute 'add_concert'\n\n----------------------------------------------------------------------\nRan 2 tests in 0.001s\n\nFAILED (errors=1)\n"
+      }
+    }
+  ],
+  "file_changes": [],
+  "coverage_reports": [
+    {
+      "timestamp": "2025-03-28T22:53:00.531043",
+      "total_coverage": 26.666666666666668,
+      "file_coverage": {
+        "test.py": {
+          "lines_total": 11,
+          "lines_covered": 8,
+          "lines_missed": 15,
+          "percentage": 72.72727272727273
+        }
+      }
+    },
+    {
+      "timestamp": "2025-04-01T00:40:38.885840",
+      "total_coverage": 20.833333333333332,
+      "file_coverage": {
+        "test.py": {
+          "lines_total": 20,
+          "lines_covered": 16,
+          "lines_missed": 19,
+          "percentage": 80.0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-04-01T00:45:00.578326",
+      "total_coverage": 20.833333333333332,
+      "file_coverage": {
+        "test.py": {
+          "lines_total": 20,
+          "lines_covered": 16,
+          "lines_missed": 19,
+          "percentage": 80.0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-04-01T00:46:10.748973",
+      "total_coverage": 20.833333333333332,
+      "file_coverage": {
+        "test.py": {
+          "lines_total": 20,
+          "lines_covered": 16,
+          "lines_missed": 19,
+          "percentage": 80.0
+        }
+      }
+    },
+    {
+      "timestamp": "2025-04-01T00:46:52.929037",
+      "total_coverage": 31.57894736842105,
+      "file_coverage": {
+        "test.py": {
+          "lines_total": 20,
+          "lines_covered": 14,
+          "lines_missed": 19,
+          "percentage": 70.0
+        },
+        "main.py": {
+          "lines_total": 14,
+          "lines_covered": 9,
+          "lines_missed": 11,
+          "percentage": 64.28571428571429
+        }
+      }
+    }
+  ],
+  "task_times": [
+    {
+      "timestamp": "2025-03-28T22:53:43.212634",
+      "task": "Moa",
+      "duration": 16.0
+    },
+    {
+      "timestamp": "2025-04-01T00:47:46.614923",
+      "task": "AI-assisted test writing (RED phase)",
+      "duration": 1.0
+    }
+  ],
+  "constraint_assignments": {
+    "manual": [
+      3,
+      1,
+      2
+    ],
+    "ai_assisted": [
+      4,
+      0,
+      5
+    ],
+    "assigned_at": "2025-03-28T22:52:41"
+  }
+}
